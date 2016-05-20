@@ -1,3 +1,6 @@
+ruby '2.3.0'
+#ruby-gemset=middleman-gemset
+
 # If you do not have OpenSSL installed, change
 # the following line to use 'http://'
 source 'https://rubygems.org'
@@ -12,3 +15,12 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 gem 'middleman', '>= 4.0.0'
 gem 'middleman-livereload'
 gem 'middleman-compass', '>= 4.0.0'
+
+# Slim
+gem 'slim', '~> 3.0.6'
+
+# Bootstrap
+gem 'bootstrap-sass', '>= 3.3.6'
+
+# Font-Awesome Sass gem
+gem 'font-awesome-sass', '~> 4.6.2'

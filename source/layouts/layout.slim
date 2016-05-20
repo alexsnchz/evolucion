@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    = meta_tag 'IE=edge', 'http-equiv': 'X-UA-Compatible'
+    = meta_tag 'width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no', name: 'viewport'
+    = favicon_tag 'logo-ingenieria.png'
+
+    / Use title if it's in the page YAML frontmatter
+    title = current_page.data.title || 'Evolución'
+
+    link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'
+
+    = stylesheet_link_tag :site, 'pace-theme'
+    = javascript_include_tag :all, 'jquery-1.12.3.min', 'pace.min', 'jquery.onepagenav', 'jquery.parallax.min'
+
+  body.container class="#{page_classes}"
+    = yield

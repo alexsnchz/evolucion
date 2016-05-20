@@ -1,6 +1,10 @@
+require 'font-awesome-sass'
+require 'bootstrap-sass'
 ###
 # Page options, layouts, aliases and proxies
 ###
+set :slim, { ugly: true, format: :html }
+set :fonts_dir, 'fonts'
 
 # Per-page layout changes:
 #
@@ -28,11 +32,11 @@ end
 ###
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def some_helper
+    "Helping"
+  end
+end
 
 # Build-specific configuration
 configure :build do
