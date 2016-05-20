@@ -1,9 +1,39 @@
 ---
-title: "Evolución de Software ISO's"
+title: "Evolución y Calidad del Software"
 ---
 
-.row
-  .col-md-12
-    h1
-      | Hola Mundo
-      i.fa.fa-bug
+header#home
+  .container
+    .table
+      .header-text
+        .row
+          .col-md-12.text-center
+            h1 class="white typed" Estándares de calidad.
+            span class="typed-cursor" |
+section#iso.section.section-padded
+  .container
+    .row.text-center.title
+      h2 ISO's
+      h4.light.muted Conoce las aplicaciones de algunos estándares de calidad que te ayudaran a obtener mejores resultados.
+    .row.services
+      - data.iso.info.each do |info|
+        .col-md-4
+          .service
+            .icon-holder
+            h4.heading = info.heading
+            p.description = info.description
+  .cut.cut-bottom
+section#advantage.section.gray-bg
+  .container
+    .row.title.text-center
+      h2.margin-top Ventajas
+      h4.light.muted ¿Para qué sirve tener una certificación en calidad?
+    .row
+      .col-md-12
+section#certificated.section
+  .container
+    .row.title.text-center
+      h2.margin-top.white Certifícate
+      h4.light.white ¿Cómo puede obtener el certificado de calidad?
+    .row.no-margin
+      .col-md-7.no-padding.col-md-offset-5.pricings.text-center

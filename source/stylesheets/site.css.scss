@@ -4,9 +4,58 @@
 @import "font-awesome-compass";
 @import "font-awesome";
 
-body {
-  background: #ECC561;
-  text-align: center;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1em;
+@font-face {
+  font-family: 'sinanova-regularregular';
+  src: url('../fonts/sinanova/SinaNovaReg-webfont.eot');
+  src: url('../fonts/sinanova/SinaNovaReg-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/sinanova/SinaNovaReg-webfont.woff2') format('woff2'),
+  url('../fonts/sinanova/SinaNovaReg-webfont.woff') format('woff'),
+  url('../fonts/sinanova/SinaNovaReg-webfont.ttf') format('truetype'),
+  url('../fonts/sinanova/SinaNovaReg-webfont.svg#sinanova-regularregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sofia_prolight';
+  src: url('../fonts/sofiapro/SofiaProLight-webfont.eot');
+  src: url('../fonts/sofiapro/SofiaProLight-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/sofiapro/SofiaProLight-webfont.woff2') format('woff2'),
+  url('../fonts/sofiapro/SofiaProLight-webfont.woff') format('woff'),
+  url('../fonts/sofiapro/SofiaProLight-webfont.ttf') format('truetype'),
+  url('../fonts/sofiapro/SofiaProLight-webfont.svg#sofia_prolight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body, p, a, span, div {
+  font-family: 'sofia_prolight', "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*h1, h2, h3, h4, h5, h6 {
+  font-family: 'sinanova-regularregular', serif;
+}*/
+
+#logo {
+  max-height: 100%;
+}
+
+.navbar-brand {
+  float: left;
+  font-size: 18px;
+  height: 50px;
+  line-height: 20px;
+  padding: 0px;
+}
+
+.m-t-20 {
+  margin-top: 20px;
+}
+
+#certificated {
+  background: #00a8ff  no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -webkit-transition: background-image 0.6s linear 0.3s;
+  transition: background-image 0.6s linear 0.3s;
 }

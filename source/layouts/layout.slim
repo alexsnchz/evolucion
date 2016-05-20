@@ -11,8 +11,11 @@ html
 
     link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'
 
-    = stylesheet_link_tag :site, 'pace-theme'
-    = javascript_include_tag :all, 'jquery-1.12.3.min', 'pace.min', 'jquery.onepagenav', 'jquery.parallax.min'
+    = stylesheet_link_tag :site, 'pace-theme', :owl, :animate, :cardio
 
-  body.container class="#{page_classes}"
+  body
+    = partial 'layouts/header'
     = yield
+    = partial 'layouts/footer'
+
+  = javascript_include_tag 'pace.min', 'jquery-1.12.3.min', 'jquery.onepagenav', 'jquery.parallax.min', 'wow.min', 'owl.carousel.min', :typewriter, :all, :cardio

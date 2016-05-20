@@ -1,0 +1,9 @@
+menu:
+  - text: Inicio
+    anchor: home
+  - text: ISO
+    anchor: iso
+  - text: Ventajas
+    anchor: advantage
+  - text: Certificados
+    anchor: certificated

@@ -1,0 +1,19 @@
+info:
+  - heading: ISO 9000
+    description: Esta norma esta dirigida a todo tipo de organización o actividad orientada a la producción de bienes o servicios.
+    image:
+  - heading: ISO 9001
+    description: Se aplica a los sistemas de gestión de calidad (SGC) y que se centra en todos los elementos de administración de calidad necesarios que permita administrar y mejorar la calidad de sus productos o servicios.
+    image:
+  - heading: ISO 9241
+    description: La Norma ISO 9241 es la norma enfocada a la calidad en usabilidad y ergonomía tanto de hardware como de software, fue creada por la ISO y la IEC.
+    image:
+  - heading: ISO 9126
+    description: Es un estándar internacional para la evaluación del Software, fue originalmente desarrollado en 1991 para proporcionar un esquema para la evaluación de calidad del software.
+    image:
+  - heading: ISO 29110
+    description: Software engineering — Lifecycle profiles for Very Small Entities (VSEs) es un nuevo estándar internacional dirigido a las Organizaciones Pequeñas de la industria de software.
+    image:
+  - heading: ISO 12207
+    description: Information Technology / Software Life Cycle Processes, es el estándar para los procesos de ciclo de vida del software de la organización ISO.
+    image:
