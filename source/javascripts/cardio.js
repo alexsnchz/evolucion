@@ -52,7 +52,7 @@ jQuery(function ($) {
 
         // Typing Intro Init
         $(".typed").typewriter({
-            speed: 60
+            speed: 50
         });
 
         // Popup Form Init

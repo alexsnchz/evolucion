@@ -27,13 +27,18 @@ section#advantage.section.gray-bg
   .container
     .row.title.text-center
       h2.margin-top Ventajas
-      h4.light.muted ¿Para qué sirve tener una certificación en calidad?
+      h4.light.muted ¿De qué sirve contar con una certificación en calidad?
     .row
-      .col-md-12
+      - data.advantages.info.each do |info|
+        .col-md-12
+          h5 = info.heading
+          p = info.text
 section#certificated.section
   .container
     .row.title.text-center
       h2.margin-top.white Certifícate
       h4.light.white ¿Cómo puede obtener el certificado de calidad?
     .row.no-margin
-      .col-md-7.no-padding.col-md-offset-5.pricings.text-center
+      .col-md-12.no-padding.text-center.white.m-b-80
+        p.white Para obtener un certificado es necesario acreditar, ante una entidad certificadora, que se están haciendo las
+          cosas conforme a la norma ISO que se pretende. Un proceso que consta de tres fases: documental, evaluación y calificación.
