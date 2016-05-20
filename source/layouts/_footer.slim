@@ -5,16 +5,11 @@ footer
         h5.white
           | Integrantes:
         .row.m-t-20
-          .col-sm-6.text-center-mobile
-            h5.white.light Alejandro Sánchez Moreno
-            h5.white.light Luis Enrique Sapien Rubio
-            h5.white.light Isaac Vega Loya
-            h5.white.light Ricardo Peña de la Rosa
-          .col-sm-6.text-center-mobile
-            h5.light-white.light 282095
-            h5.light-white.light 281896
-            h5.light-white.light 282------
-            h5.light-white.light 282077
+          - data.students.student.each do |student|
+            .col-sm-6.text-center-mobile
+              h5.white.light = student.name
+            .col-sm-6.text-center-mobile
+              h5.light-white.light = student.id
 
     .row.bottom-footer.text-center-mobile
       .col-sm-12
